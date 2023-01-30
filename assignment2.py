@@ -13,8 +13,8 @@ class Assignment2:
         a = []
         p = 0
         while p <= 2023 - self.year:
-            a.append(p)
             p = p + 10
+            a.append(p)
         return a
 
     def modifyYear(self, n):
@@ -31,18 +31,17 @@ class Assignment2:
 
     @staticmethod
     def checkGoodString(string):
-        if len(string) < 9:
+         if len(string) >= 9 and string[0].islower():
+            _num_count = 0
+            for i in string:
+                if i.isdigit():
+                    _num_count += 1
+                if _num_count > 1:
+                    return False
+                else:
+                    return True
+        else:
             return False
-        if not string[0].islower():
-            return False
-        _num_count = 0
-        for i in string:
-            if i.isdigit():
-                _num_count += 1
-            if _num_count > 1:
-                return False
-
-        return True
 
     @staticmethod
     def connectTcp(host, port):
