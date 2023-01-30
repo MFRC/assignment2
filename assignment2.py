@@ -13,7 +13,7 @@ class Assignment2:
         a = []
         p = 0
         y = 2023 - self.year
-        while p < y:
+        while p+10 < y:
             p = p + 10
             a.append(p)
         return a
