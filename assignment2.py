@@ -31,7 +31,7 @@ class Assignment2:
 
     @staticmethod
     def checkGoodString(string):
-         if len(string) >= 9 and string[0].islower():
+        if len(string) >= 9 and string[0].islower():
             _num_count = 0
             for i in string:
                 if i.isdigit():
@@ -42,6 +42,7 @@ class Assignment2:
                     return True
         else:
             return False
+
 
     @staticmethod
     def connectTcp(host, port):
