@@ -12,7 +12,8 @@ class Assignment2:
     def listAnniversaries(self):
         a = []
         p = 0
-        while p <= 2023 - self.year:
+        y = 2023 - self.year
+        while p < y:
             p = p + 10
             a.append(p)
         return a
