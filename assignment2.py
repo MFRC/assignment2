@@ -32,17 +32,17 @@ class Assignment2:
 
     @staticmethod
     def checkGoodString(string):
-        if len(string) >= 9 and string[0].islower():
-            _num_count = 0
-            for i in string:
-                if i.isdigit():
-                    _num_count += 1
-            if _num_count > 1:
-                return False
-            else:
-                return True
-        else:
+        _num_count = 0
+        for i in string:
+            if i.isdigit():
+                _num_count += 1
+        if _num_count > 1:
             return False
+        else:
+            if len(string) >= 9 and string[0].islower():
+                return True
+            else:
+                return False
 
 
     @staticmethod
