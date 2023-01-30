@@ -36,9 +36,9 @@ class Assignment2:
         for i in string:
             if i.isdigit():
                 _num_count += 1
-        if _num_count > 1:
+        if _num_count != 1:
             return False
-        else:
+        if _num_count == 1:
             if len(string) >= 9 and string[0].islower():
                 return True
             else:
