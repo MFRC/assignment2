@@ -7,7 +7,7 @@ class Assignment2:
 
     def tellAge(self, currentYear):
         age = currentYear - self.year
-        print("Your age is {} ".format(age))
+        print("Your age is {}".format(age))
 
     def listAnniversaries(self):
         a = []
