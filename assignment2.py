@@ -19,15 +19,20 @@ class Assignment2:
         return a
 
     def modifyYear(self, n):
-        num = n
+        num = self.year
         res = ""
-        arr = str(num)
+        stt = str(self.year)
+
         for i in range(n):
-            res += arr[:2]
+            res += stt[0]
+            res += stt[1]
         num = num*n
-        lst = str(num)
-        arr1 = lst[::2]
-        res += arr1
+        sttt = str(num)
+        count = 1
+        for i in sttt:
+            if count % 2 == 1:
+                res += i
+            count += 1
         return res
 
     @staticmethod
