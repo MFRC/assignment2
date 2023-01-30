@@ -37,10 +37,10 @@ class Assignment2:
             for i in string:
                 if i.isdigit():
                     _num_count += 1
-                if _num_count > 1:
-                    return False
-                else:
-                    return True
+            if _num_count > 1:
+                return False
+            else:
+                return True
         else:
             return False
 
